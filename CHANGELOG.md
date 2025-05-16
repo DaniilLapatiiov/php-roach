@@ -4,6 +4,96 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.0.0 (2025-05-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* add namespace to run and scheduler ([#105](https://github.com/DaniilLapatiiov/php-roach/issues/105))
+
+### Features
+
+* add http error middleware ([96e7cb1](https://github.com/DaniilLapatiiov/php-roach/commit/96e7cb1560ecf7e8e0d2ce445bccf78d2d9899cf))
+* add namespace to run and scheduler ([#105](https://github.com/DaniilLapatiiov/php-roach/issues/105)) ([e3b7d53](https://github.com/DaniilLapatiiov/php-roach/commit/e3b7d53a59e32c3f69dc290b6fec7f29ded00027))
+* add request proxy middleware ([71a7ffc](https://github.com/DaniilLapatiiov/php-roach/commit/71a7ffc019695617e0a9f62ca16664e236085f59))
+* add ResponseReceiving and ResponseReceived events ([891c788](https://github.com/DaniilLapatiiov/php-roach/commit/891c788c6d738da47a601d45f44fcbce1ba03a83))
+* allow request middleware to set a response to bypass downloader ([#106](https://github.com/DaniilLapatiiov/php-roach/issues/106)) ([de46a64](https://github.com/DaniilLapatiiov/php-roach/commit/de46a64db1b5105b039e28e572f11298bdf5cc7c))
+* drop php 8.1 support ([7b43540](https://github.com/DaniilLapatiiov/php-roach/commit/7b43540f347b02fa517b82f91a118fd4735bcaa0))
+* enable http error middleware by default in BasicSpider ([94b2cee](https://github.com/DaniilLapatiiov/php-roach/commit/94b2ceeb4e8d879b054248b2f827763544e9a91b))
+* php 8.3 support ([0a44d94](https://github.com/DaniilLapatiiov/php-roach/commit/0a44d94fed57021346e919d0eed23a3373c32488))
+
+
+### Bug Fixes
+
+* added missing response middleware dropped event ([200d298](https://github.com/DaniilLapatiiov/php-roach/commit/200d298853c23169e82830339fc2f8d63a8f233b))
+* fix psalm errors on latest release ([052090a](https://github.com/DaniilLapatiiov/php-roach/commit/052090adb5f6d79e387fd60fea3c6945941d9f8b))
+* fix race condition in SystemClock ([66277f1](https://github.com/DaniilLapatiiov/php-roach/commit/66277f15511eb85c2849a89379a871c125603813))
+* rename integration tests so they actually get run ([563f484](https://github.com/DaniilLapatiiov/php-roach/commit/563f4840f6a94393a273228eda2f13c6eae09775))
+
+
+### Miscellaneous Chores
+
+* (deps): bump symfony/console from 6.2.5 to 6.2.7 ([#93](https://github.com/DaniilLapatiiov/php-roach/issues/93)) ([efe63b9](https://github.com/DaniilLapatiiov/php-roach/commit/efe63b98b01c1bcaed6033945e4975598eac7d6d))
+* (deps): bump symfony/css-selector from 6.2.5 to 6.2.7 ([318d7ce](https://github.com/DaniilLapatiiov/php-roach/commit/318d7cefdb5301e8e1bc4dac4a895be4f9587bbe))
+* (deps): bump symfony/dom-crawler from 6.2.5 to 6.2.7 ([#92](https://github.com/DaniilLapatiiov/php-roach/issues/92)) ([5de6180](https://github.com/DaniilLapatiiov/php-roach/commit/5de6180db8dbf5b6a1b1d248f456e3e0d28dfd3f))
+* add code of conduct ([d2a36b2](https://github.com/DaniilLapatiiov/php-roach/commit/d2a36b2eb24ab2d61dcdbd84026ca91dfe1c6241))
+* add CODEOWNERS file ([7a2ee6e](https://github.com/DaniilLapatiiov/php-roach/commit/7a2ee6e7f397c951c32d1cddd2fe5fd4a6e20807))
+* add commitlint step to pipeline ([98886de](https://github.com/DaniilLapatiiov/php-roach/commit/98886de8add11a82de719a461d22127b2a758875))
+* add contribution guide ([a3042b4](https://github.com/DaniilLapatiiov/php-roach/commit/a3042b42cb5ffb37bf613d42af0052feb66ae5a5))
+* add issue templates ([44de37f](https://github.com/DaniilLapatiiov/php-roach/commit/44de37f5ab3e30c878fb7f6cb471e4dd4e6163d9))
+* apply cs fixes ([d171aca](https://github.com/DaniilLapatiiov/php-roach/commit/d171acaa2cfd5d69bb0a1e1dc6c63a87fb7b9e3f))
+* bump php version to 8.3 in pipeline ([80c8b42](https://github.com/DaniilLapatiiov/php-roach/commit/80c8b4202a9442082f7eeda96314949482dbb80c))
+* **deps-dev:** bump ergebnis/composer-normalize from 2.29.0 to 2.30.2 ([8fe706c](https://github.com/DaniilLapatiiov/php-roach/commit/8fe706c31b00f1bbfb7cfac6a46a7beb5a47f0a5))
+* **deps-dev:** bump ergebnis/composer-normalize from 2.39.0 to 2.41.1 ([9ea43be](https://github.com/DaniilLapatiiov/php-roach/commit/9ea43beaf240221d3aad8200a4d5e89533eee623))
+* **deps-dev:** bump ergebnis/php-cs-fixer-config from 5.3.1 to 5.3.2 ([e1488ea](https://github.com/DaniilLapatiiov/php-roach/commit/e1488ea3869ef3cbe540a9d8d250973a2f880b3f))
+* **deps-dev:** bump ergebnis/php-cs-fixer-config from 5.3.2 to 5.3.3 ([3219255](https://github.com/DaniilLapatiiov/php-roach/commit/32192556c619898362be4759371c733483957c0c))
+* **deps-dev:** bump ergebnis/php-cs-fixer-config from 5.3.3 to 5.4.0 ([#113](https://github.com/DaniilLapatiiov/php-roach/issues/113)) ([5adbaa0](https://github.com/DaniilLapatiiov/php-roach/commit/5adbaa09c4b1c4ecba899df4232e616e7a592f53))
+* **deps-dev:** bump ergebnis/php-cs-fixer-config from 5.4.0 to 5.7.0 ([#127](https://github.com/DaniilLapatiiov/php-roach/issues/127)) ([1f56f13](https://github.com/DaniilLapatiiov/php-roach/commit/1f56f1331e70e3070501542012b9b1279dd76664))
+* **deps-dev:** bump ergebnis/php-cs-fixer-config from 6.11.0 to 6.20.0 ([93a006a](https://github.com/DaniilLapatiiov/php-roach/commit/93a006a174b1080155495d15a789a235bdce4e8f))
+* **deps-dev:** bump phpunit/phpunit from 10.0.15 to 10.0.16 ([baab623](https://github.com/DaniilLapatiiov/php-roach/commit/baab623c96cf6d710fdf514f3d8c27e4f13f7e34))
+* **deps-dev:** bump phpunit/phpunit from 10.0.16 to 10.0.18 ([e611c46](https://github.com/DaniilLapatiiov/php-roach/commit/e611c466a862c62158a6e4f12253dde243b59a04))
+* **deps-dev:** bump phpunit/phpunit from 10.0.18 to 10.2.0 ([#130](https://github.com/DaniilLapatiiov/php-roach/issues/130)) ([0990247](https://github.com/DaniilLapatiiov/php-roach/commit/09902474307e5a84846db430fa921a24ba9d764f))
+* **deps-dev:** bump phpunit/phpunit from 10.2.0 to 10.3.2 ([67b8188](https://github.com/DaniilLapatiiov/php-roach/commit/67b81888b72c254ad414f0d8c59760b7880950f6))
+* **deps-dev:** bump phpunit/phpunit from 10.4.2 to 10.5.9 ([c6071c2](https://github.com/DaniilLapatiiov/php-roach/commit/c6071c23bba233714b37724504a760cb10b53040))
+* **deps-dev:** bump spatie/browsershot from 3.60.0 to 3.61.0 ([3d68385](https://github.com/DaniilLapatiiov/php-roach/commit/3d683855195e8d02e92fc1bdf1184e58e0cc5e05))
+* **deps-dev:** bump vimeo/psalm from 5.16.0 to 5.20.0 ([c2088b6](https://github.com/DaniilLapatiiov/php-roach/commit/c2088b65920162b5aad994716de253c4572608c7))
+* **deps-dev:** bump vimeo/psalm from 5.6.0 to 5.8.0 ([103eb8b](https://github.com/DaniilLapatiiov/php-roach/commit/103eb8bb98bc1d5bb0b2139a8e0814990bfe110d))
+* **deps-dev:** bump vimeo/psalm from 5.8.0 to 5.9.0 ([#110](https://github.com/DaniilLapatiiov/php-roach/issues/110)) ([cf5512f](https://github.com/DaniilLapatiiov/php-roach/commit/cf5512f73268754dd7e4d8a2645630a01b8e0fef))
+* **deps-dev:** bump vimeo/psalm from 5.9.0 to 5.15.0 ([3e4065a](https://github.com/DaniilLapatiiov/php-roach/commit/3e4065a8ba461beec2bc769802a62b8aea5349e0))
+* **deps:** bump guzzlehttp/guzzle from 7.5.0 to 7.8.0 ([8145b42](https://github.com/DaniilLapatiiov/php-roach/commit/8145b42e967ecb71f8d9ef15cf795edb9ff581fb))
+* **deps:** bump guzzlehttp/guzzle from 7.8.0 to 7.8.1 ([3fba74e](https://github.com/DaniilLapatiiov/php-roach/commit/3fba74e0b276ae1f2d305a81ca328f21ce8a6c06))
+* **deps:** bump guzzlehttp/psr7 from 2.4.3 to 2.5.0 ([#120](https://github.com/DaniilLapatiiov/php-roach/issues/120)) ([a2de35a](https://github.com/DaniilLapatiiov/php-roach/commit/a2de35a8bf2c8f32ebcd5d03f37590d3b375407e))
+* **deps:** bump psy/psysh from 0.11.12 to 0.11.13 ([008befe](https://github.com/DaniilLapatiiov/php-roach/commit/008befed8ce47a7386488326beb9e25580a49fdf))
+* **deps:** bump psy/psysh from 0.11.13 to 0.11.18 ([#128](https://github.com/DaniilLapatiiov/php-roach/issues/128)) ([8cbb5fe](https://github.com/DaniilLapatiiov/php-roach/commit/8cbb5fe5dbb92338c66ffd52919f366f3dcb10e4))
+* **deps:** bump psy/psysh from 0.11.22 to 0.12.0 ([372d663](https://github.com/DaniilLapatiiov/php-roach/commit/372d66364215095dc14a56619a5281ee8f0c6a07))
+* **deps:** bump symfony/console from 6.2.7 to 6.2.8 ([#111](https://github.com/DaniilLapatiiov/php-roach/issues/111)) ([9fc3bfe](https://github.com/DaniilLapatiiov/php-roach/commit/9fc3bfe5d10fd6a52014232d3834a5f89773ca78))
+* **deps:** bump symfony/css-selector from 6.2.7 to 6.3.2 ([dc19729](https://github.com/DaniilLapatiiov/php-roach/commit/dc19729a3def3cce4120eef92a7ef2d63f615db0))
+* **deps:** bump symfony/css-selector from 6.3.2 to 6.4.0 ([0dcc965](https://github.com/DaniilLapatiiov/php-roach/commit/0dcc965917d59396a71c36dda7e38435f7e77ce5))
+* **deps:** bump symfony/dom-crawler from 6.2.7 to 6.2.8 ([#109](https://github.com/DaniilLapatiiov/php-roach/issues/109)) ([778f943](https://github.com/DaniilLapatiiov/php-roach/commit/778f9435b57ccba0fb0b74506ddf66da39c4b3c7))
+* **deps:** bump symfony/dom-crawler from 6.2.8 to 6.2.9 ([#118](https://github.com/DaniilLapatiiov/php-roach/issues/118)) ([30fe6e7](https://github.com/DaniilLapatiiov/php-roach/commit/30fe6e7bd55f8bf281d39c7f504b00e03efe5920))
+* **deps:** bump symfony/dom-crawler from 6.2.9 to 6.4.0 ([3a18f18](https://github.com/DaniilLapatiiov/php-roach/commit/3a18f1874ebf10896947e7f5e8fb3b71776f379a))
+* **deps:** bump symfony/event-dispatcher from 6.2.5 to 6.2.7 ([b92c690](https://github.com/DaniilLapatiiov/php-roach/commit/b92c69077091f72a82e1b611c233b5aadc1b5c6c))
+* **deps:** bump symfony/event-dispatcher from 6.2.8 to 6.3.2 ([b89addf](https://github.com/DaniilLapatiiov/php-roach/commit/b89addf050989494a20fb79e610ee62fce0c6d68))
+* **deps:** bump symfony/event-dispatcher from 6.3.2 to 6.4.2 ([46b3862](https://github.com/DaniilLapatiiov/php-roach/commit/46b3862f0d8e8ac81827a8abe4ead66edf71b809))
+* **deps:** bump symfony/options-resolver from 6.2.5 to 6.2.7 ([#89](https://github.com/DaniilLapatiiov/php-roach/issues/89)) ([4bd59b9](https://github.com/DaniilLapatiiov/php-roach/commit/4bd59b97d2a2366badf6c24f36ae902eb08f82f9))
+* **deps:** bump symfony/options-resolver from 6.3.0 to 6.4.0 ([2a32637](https://github.com/DaniilLapatiiov/php-roach/commit/2a326375167cce1f608a520d2b8f1fbaccd59aaa))
+* **deps:** bump tj-actions/branch-names in /.github/workflows ([b8c49ae](https://github.com/DaniilLapatiiov/php-roach/commit/b8c49aeba556f797984fbae616525fe6531fc2e6))
+* drop php 8.1 support ([dd119ea](https://github.com/DaniilLapatiiov/php-roach/commit/dd119eac05b8b8e1871e054e620bf81d57307563))
+* fix psalm errors ([15ab4ad](https://github.com/DaniilLapatiiov/php-roach/commit/15ab4adc9230beffd2fb2a454480f11d7c56dbec))
+* **main:** release 3.0.0 ([d0d1c90](https://github.com/DaniilLapatiiov/php-roach/commit/d0d1c90bc5e38d94c71417cbd72712700955d6eb))
+* **main:** release 3.0.1 ([1cbc85e](https://github.com/DaniilLapatiiov/php-roach/commit/1cbc85e76468dab83408969cf2c698d96f5de15d))
+* **main:** release 3.1.0 ([a80491c](https://github.com/DaniilLapatiiov/php-roach/commit/a80491c966c8605ef359114aa1f4def529c59567))
+* **main:** release 3.2.0 ([69184b2](https://github.com/DaniilLapatiiov/php-roach/commit/69184b2151061da11e39d6f4a5f237e8cebb39a0))
+* **main:** release 3.2.1 ([35183fc](https://github.com/DaniilLapatiiov/php-roach/commit/35183fcc39c1f8052f1152da8e22906ffffa48b3))
+* set up dependabot ([367fc1c](https://github.com/DaniilLapatiiov/php-roach/commit/367fc1ce8f9014e4064959477127c5eccc7f82d6))
+* set up release please action ([b0f098d](https://github.com/DaniilLapatiiov/php-roach/commit/b0f098d868d522542a233bd9fe54cc36ed66c392))
+* support php 8.4 ([542f62b](https://github.com/DaniilLapatiiov/php-roach/commit/542f62b1a7ecab372a4652dbe0c3baea0cd750c8))
+* update changelog ([cdc3813](https://github.com/DaniilLapatiiov/php-roach/commit/cdc3813658c8204a6605b4fc5514f948074a5b56))
+* update changelog ([2121cd2](https://github.com/DaniilLapatiiov/php-roach/commit/2121cd24d4b1e1dc54303190d111a111d25aabee))
+* update copyright year ([eaf23ca](https://github.com/DaniilLapatiiov/php-roach/commit/eaf23caef4f06213c87845944d599f71842728ab))
+* upgrade dependencies ([479782e](https://github.com/DaniilLapatiiov/php-roach/commit/479782ef497d183fcae2e51a9f5424fdc8222e2d))
+* upgrade to phpunit 10 ([d9bb498](https://github.com/DaniilLapatiiov/php-roach/commit/d9bb49899ed8cb9ddda9b61ea52fd99f9f00b7b2))
+
 ## [3.2.1](https://github.com/roach-php/core/compare/v3.2.0...v3.2.1) (2025-03-21)
 
 
